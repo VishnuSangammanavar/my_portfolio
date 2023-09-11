@@ -463,7 +463,7 @@ nav .fas {
     }
 
     .about .profile,.about .content {
-        flex-basis: 100%;
+        flex-basis: 90%;
     }
 
     .about .profile {
