@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+
+    <script src="https://kit.fontawesome.com/aca593e5d3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!--====== Header Section ======-->
+    <header id="header">
+        <div class="container">
+
+            <nav class="nav">
+                <div class="logo">
+                    <img src="" alt="">
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+        </div>
+    </header><!-- header end -->
+
+    <!--====== Hero Section ======-->
+    <div id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <br><span>Vishnu</span> Sangammanavar</h1>
+            </div>
+        </div>
+    </div><!-- hero end -->
+
+    <main>
+
+        <!--====== About Section ======-->
+        <section id="about" class="about">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="profile">
+                        <img src="images/myimg.jpg" alt="My image">
+                    </div>
+                    <div class="content">
+                        <h2 class="sub-title">About Me</h2>
+                        <p>My name is <strong>Vishnu Sangammanavar</strong>, I am 21 Current student looking to join the workforce to gain real-world experience. Ability to complete tasks on time in both individual and team settings. Dedicated worker with excellent computer skills and time management. Very much eager to learn new things.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="education">
+                            <ul>
+                                <li><span>KLE Society's College Of BCA RLSI, Belagavi</span></li>
+                                <li><span>Agregate CGPA - 8.05</span></li>
+                                <li>Aug 2020 - Sep 2023</li>
+                                <h3><strong>Achievements:</strong></h3>
+                                <ol>
+                                    <li>Best Student Cabinet (Placement secretary)</li>
+                                    <li>Placement Secretary for the year 2022 - 2023.</li>
+                                    <li>Winner of Code-e-thon event conducted by Gogte Institute of technology.</li>
+                                    <li>Won 2nd position in coding event conducted by KLE Institute of Technology, Hubbali.</li>
+                                    <li>Participated in Ganaka Vidya National Level Hackathon conducted by Jain College Of Engineering, Belagavi Dept of MCA.</li>
+                                </ol>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="skills">
+                            <ul>
+                                <li>HTML</li>
+                                <li>Cascading Style Sheets (CSS)</li>
+                                <li>JavaScript</li>
+                                <li>Object-Oriented Programming (OOP)</li>
+                                <li>Python Programming</li>
+                                <li>Java</li>
+                                <li>C Programming</li>
+                                <li>C++</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!--====== Skills Section ======-->
+        <section id="skills" class="skills">
+            <div class="container">
+
+                <h2 class="sub-title">My Skills</h2>
+                <div class="skills-list">
+                    <div class="skill" id="box1">
+                        <div class="img">
+                            <img src="images/html.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>HTML</h3>
+                        </div>
+                    </div>
+                    <div class="skill" id="box2">
+                        <div class="img">
+                            <img src="images/css.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>CSS</h3>
+                        </div>
+                    </div>
+                    <div class="skill" id="box3">
+                        <div class="img">
+                            <img src="images/JavaScript.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>JavaScript</h3>
+                        </div>
+                    </div>
+                    <div class="skill" id="box4">
+                        <div class="img">
+                            <img src="images/python.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>Python</h3>
+                        </div>
+                    </div>
+                    <div class="skill" id="box5">
+                        <div class="img">
+                            <img src="images/Java.svg" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>Java</h3>
+                        </div>
+                    </div>
+                    <div class="skill" id="box6">
+                        <div class="img">
+                            <img src="images/C++.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>C++</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--====== Projects Section ======-->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="sub-title">My Works</h2>
+                <span>My works from so far</span>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/app-1.jpg" alt="">
+                        <div class="content">
+                            <h3>Project name</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eius asperiores quo minima alias consequatur molestias quam quia rem veniam?</p>
+                            <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/details-2.png" alt="">
+                        <div class="content">
+                            <h3>Project name</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eius asperiores quo minima alias consequatur molestias quam quia rem veniam?</p>
+                            <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/about-img.png" alt="">
+                        <div class="content">
+                            <h3>Project name</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eius asperiores quo minima alias consequatur molestias quam quia rem veniam?</p>
+                            <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/portfolio-2.jpg" alt="">
+                        <div class="content">
+                            <h3>Project name</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eius asperiores quo minima alias consequatur molestias quam quia rem veniam?</p>
+                            <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/app-1.jpg" alt="">
+                        <div class="content">
+                            <h3>Project name</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eius asperiores quo minima alias consequatur molestias quam quia rem veniam?</p>
+                            <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--====== Contact Section ======-->
+        <section id="contact" class="contact">
+            <div class="container">
+
+                <div class="row">
+                    <div class="left">
+                        <h2 class="sub-title">Contact Me</h2>
+                        <p><i class="fas fa-paper-plane"></i>vishnusangammanavar25@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>6360258267</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <a href="Documents/RESUME_2023.pdf" download class="btn">Download Resume</a>
+                    </div>
+                    <div class="right">
+                        <form action="https://formspree.io/f/xvojrebq" method="post">
+                            <input type="text" name="name" placeholder="Your name" id="name">
+                            <input type="email" name="email" placeholder="Your email" id="email">
+                            <textarea name="message" placeholder="Your message" id="message" cols="30" rows="6"></textarea>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main><!-- main end -->
+
+    <footer>
+        <div class="copyright">
+            <p>Copyright &copy; for 2022-23</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
