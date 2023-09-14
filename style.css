@@ -110,7 +110,7 @@ body {
 
 .about .tab-titles {
     display: flex;
-    margin: 40px 0 40px;
+    margin: 40px 0;
 }
 
 .about .tab-links {
@@ -462,7 +462,7 @@ nav .fas {
         margin-top: -10%;
     }
 
-    .about .profile,.about .content {
+    .about .profile, .about .content {
         flex-basis: 100%;
     }
 
@@ -476,7 +476,6 @@ nav .fas {
 
     .about .content .tab-links {
         font-size: 16px;
-        margin-right: 45px;
     }
 
     .skills-list .skill img {
