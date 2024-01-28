@@ -1,0 +1,710 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #0d1b2a;
+  --font-color: #fff;
+
+  --btn-background: #1c1427;
+  --main-color: #1b263b;
+  --primary-color: #415a77;
+  --secondary-color: #778da9;
+  --third-color: #e0e1dd;
+  --border-color: #d00000;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(45deg, rgba( 0, 0, 0, 0.95) 0, rgba( 0, 0, 0, 0.99) 100%);
+}
+
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9eccf4;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-primary {
+font-family: "Raleway", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# General Section
+--------------------------------------------------------------*/
+section {
+  padding: 8rem 0;
+}
+
+.section-title {
+  text-align: left;
+  padding-bottom: 3rem;
+}
+
+.section-title h2 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 900;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  height: 7rem;
+  width: 100%;
+  background: #000;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 997;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.06);
+}
+
+.header .logo h1 {
+  font-size: 2.8rem;
+  padding: 10px 0;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.header .logo h1 a,
+.header .logo h1 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header .logo span {
+  opacity: 0;
+  animation: code 1s step-end infinite;
+} 
+
+@keyframes code {
+0% {
+  opacity: 0;
+}
+
+50% {
+  opacity: 1;
+}
+
+100% {
+  opacity: 0;
+}
+}
+
+#main,
+.hero {
+  color: var(--font-color);
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: var(--font-color);
+}
+
+nav .mobile-nav-toggle {
+  display: none;
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #1f3548;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  .navbar .mobile-nav-toggle {
+      display: block;
+      font-size: 3.2rem;
+      color: #fff;
+  }
+
+  .navbar ul .mobile-nav-toggle {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      cursor: pointer;
+  }
+
+  .navbar ul {
+      background: linear-gradient( rgba( 0, 0, 0, 0.7), rgba( 0, 0, 0, 0.7));
+      backdrop-filter: blur(5px);
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 300px;        
+      height: 100vh;
+      padding-top: 50px;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      transition: 0.5s;
+      box-shadow: 1px 1px 10px 1px rgba(52, 52, 52, 0.5);
+      z-index: 2;
+  }
+
+  .navbar ul li {
+      display: block;
+      margin: 15px;
+  }
+
+  .navbar a,
+  .navbar a:focus {
+      padding: 10px 20px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #ababab;
+  }
+
+  .navbar a:hover,
+  .navbar .active,
+  .navbar li:hover>a {
+      color: #fff;
+      transform: scale(1.2);
+  }
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  width: 100%;
+  height: 100vh;
+  padding-top: 120px;
+  position: relative;
+}
+
+.hero .hero-content h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: -10px;
+}
+
+.hero .hero-content span {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--border-color);
+}
+
+.hero .hero-content p {
+  font-size: 1.6rem;
+  line-height: 2;
+  margin-top: 1.5rem;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  text-align: justify;
+}
+
+.btn.hire {
+  color: #fff;
+  display: inline-block;
+  border-radius: 50px;
+  padding: 10px 30px;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 2rem;
+  background-color: var(--btn-background);
+  cursor: pointer;
+}
+
+.btn.hire:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.hero .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .image img {
+  width: 100%;
+  border-radius: 5rem;
+  animation: float 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  0% {
+      transform: translate(0);
+  }
+  50% {
+      transform: translateY(15px);
+  }
+  100% {
+      transform: translate(0);
+  }
+}
+
+.hero .social {
+  position: absolute;
+  bottom: 30px;
+}
+
+.hero .social .social-icons {
+  color: #fff;
+  margin-right: 6rem;
+}
+
+.hero .social .social-icons .icon {
+  font-size: 3.5rem;
+  transition: ease 0.5s;
+}
+
+.hero .social .social-icons .icon:hover {
+  transform: scale(1.2);
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about .content {
+  padding-right: 60px;
+}
+
+.about .content p {
+  font-size: 1.6rem;
+  line-height: 2;
+  margin-top: 1.5rem;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  text-align: justify;
+}
+
+.about .content h3 {
+  margin-top: 30px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.about .content ol li {
+  font-size: 1.6rem;
+  margin: 10px 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.about .skill-list {
+  border-left: 1px solid #444;
+  padding-left: 60px;
+}
+
+.skill-list .skill {
+  margin-bottom: 30px;
+}
+
+.skill-list .skill h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: capitalize;
+}
+
+.skill-list .skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  gap: 40px;
+}
+
+.skill-list .skill img {
+  width: 40px;
+  height: 40px;
+}
+
+/*--------------------------------------------------------------
+# Projects Section
+--------------------------------------------------------------*/
+#projects {
+  padding: 8rem 0;
+}
+
+.projects .project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.projects .project {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #000;
+  padding-bottom: 10px;
+}
+
+.projects .project .image {
+  width: 100%;
+  height: 220px;
+  color: var(--border-color);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.projects .project .image .share {
+  opacity: 0;
+  font-size: 3rem;
+  z-index: 10;
+}
+
+.projects .project .image:hover .share {
+  opacity: 1;
+}
+
+.projects .project .image::before {
+  content: "";
+  background: linear-gradient( rgba(0 ,0 ,0 , 0.6), rgba(0 ,0 ,0 , 0.6));
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.projects .project .image:hover {
+  transform: scale(1.1);
+}
+
+.projects .project .image:hover::before{
+  opacity: 1;
+}
+
+.projects .project .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.projects .project .info h3 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-transform: capitalize
+}
+
+.projects .project .info p {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  font-family: "Open Sans", sans-serif;
+}
+
+.projects .project .info .tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: start;
+}
+
+.projects .project .info .tag {
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  text-decoration: none;
+  background-color: var(--btn-background);
+  padding: 8px 10px;
+  border-radius: 3px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.projects .project .info .tag:hover {
+  background-color: var(--border-color);
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact .info .title {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.contact .info .contact-us {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .info .contact-us a {
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.contact .info a .icon {
+  color: #ff004f;
+  margin-right: 15px;
+  font-size: 3rem;
+}
+
+.contact .social {
+  margin-top: 20px;
+}
+
+.contact .social .social-icons {
+  margin-right: 6rem;
+}
+
+.contact .social .social-icons .icon {
+  font-size: 3.5rem;
+}
+
+.contact .btn {
+  margin-top: 5rem;
+}
+
+.contact .form input, 
+.contact .form textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #262626;
+  padding: 12px;
+  margin: 15px 0;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  border-radius: 6px;
+}
+
+.contact .submit {
+  margin-top: 30px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: inline-block;
+  background: #ff004f;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/*--------------------------------------------------------------
+# footer Section
+--------------------------------------------------------------*/
+footer {
+  background: var(--third-color);
+  padding: 6rem 0;
+}
+
+footer .section-title h2 {
+  color: #000;
+}
+
+footer .achievements ol li {
+  color: #000;
+  list-style-type: disc;
+  font-size: 1.5rem;
+  line-height: 2;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+}
+
+footer .interests .tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+
+footer .interests .tags .tag {
+  color: #000;
+  font-size: 1.6rem;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 50px;
+  border: 1px solid #000;
+  text-align: center;
+  transition: 0.5s;
+}
+
+footer .interests .hire {
+  margin-top: 30px;
+  border-top: 1px solid #444;
+}
+
+footer .interests .hire h3{
+  color: #444;
+  margin-top: 20px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+footer .interests .hire a {
+  color: var(--border-color);
+  margin-top: 20px;
+  font-size: 3rem;
+  font-weight: 700;
+  text-decoration: underline;
+  font-family: 'Courier New', Courier, monospace;   
+}
+
+footer .interests .hire a:hover {
+  color: rgb(178, 44, 44);
+  text-decoration: none;
+}
+
+/*------- @media Queary -------*/
+@media (max-width: 992px) {
+  section {
+      padding: 6rem 0;
+  }
+
+  #projects {
+      padding: 10px 0;
+  }
+
+  .about .skill-list {
+      padding-top: 30px;
+  }
+
+  .about {
+      margin-top: -10%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .container {
+      padding: 10px 2%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+      padding: 10px 2%;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+      height: auto;
+  }
+
+  .hero .hero-content .btn {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+  }
+
+  .hero .image img {
+      width: 80%;
+  }
+
+  .hero .social {
+      position: relative;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+  }
+
+  .hero .social .social-icons {
+      margin: 20px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .hero .hero-content h1 {
+      font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .about .content {
+      padding-right: 0;
+  }
+
+  .about .skill-list {
+      border: none;
+      padding-left: 0;
+  }
+}
