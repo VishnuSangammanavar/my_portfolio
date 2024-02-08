@@ -85,6 +85,13 @@ const project = [
         tags : ["HTML", "CSS", "JavaScript"]
     },
     {
+        projectUrl: "https://vishnusangammanavar.github.io/Weather-App/",
+        imgUrl: "url('./img/Weather.png')",
+        title: "Weather App",
+        desc: "A weather app, where users can easily check the current weather conditions for any location worldwide. It provides detailed information such as temperature, humidity, wind speed, and more",
+        tags : ["HTML", "CSS", "JavaScript", "React", "Bootstrap", "Material UI"]
+    },
+    {
         projectUrl: "https://vishnusangammanavar.github.io/TodoApp/",
         imgUrl: "url('./img/TodoApp.png')",
         title: "Todo App",
@@ -95,15 +102,8 @@ const project = [
         projectUrl: "https://vishnusangammanavar.github.io/Easy-Notes/",
         imgUrl: "url('./img/EasyNote.png')",
         title: "Easy Notes",
-        desc: "Notes in your pocket. Add your quick note and access it any time",
+        desc: "Notes in your pocket. Easy Notes is a user-friendly note-taking web application, Add your quick note and access it any time",
         tags : ["HTML", "CSS", "JavaScript", "React", "Material UI", "Bootstrap"]
-    },
-    {
-        projectUrl: "https://vishnusangammanavar.github.io/Weather-App/",
-        imgUrl: "url('./img/Weather.png')",
-        title: "Weather App",
-        desc: "A weather app, where users can easily check the current weather conditions for any location worldwide. It provides detailed information such as temperature, humidity, wind speed, and more",
-        tags : ["HTML", "CSS", "JavaScript", "React", "Bootstrap", "Material UI"]
     },
     {
         projectUrl: "https://vishnusangammanavar.github.io/movie-recommendation/",
