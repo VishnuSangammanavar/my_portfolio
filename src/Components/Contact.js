@@ -17,7 +17,7 @@ const Contact = () => {
                                 <a href="tel:6360258267"><PhoneIcon className='icon' />+91 6360258267</a>
                             </div>
                             <Social />
-                            <a href="Documents/RESUME_2023.pdf" download className="btn btn-outline-danger hire">get my resume</a>
+                            <a href="Documents/Vishnu_Sangammanavar.pdf" download className="btn btn-outline-danger hire">get my resume</a>
                         </div>
                         <div className="col-lg-6 form">
                             <form action="https://formspree.io/f/xvojrebq" method="post">
