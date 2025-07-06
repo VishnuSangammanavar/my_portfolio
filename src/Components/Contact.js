@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import SendIcon from '@mui/icons-material/Send';
 import PhoneIcon from '@mui/icons-material/Phone';
 import Social from './Social';
@@ -17,7 +17,7 @@ const Contact = () => {
                                 <a href="tel:6360258267"><PhoneIcon className='icon' />+91 6360258267</a>
                             </div>
                             <Social />
-                            <a href="Documents/Vishnu_Sangammanavar.pdf" download className="btn btn-outline-danger hire">get my resume</a>
+                            <a href="https://drive.google.com/file/d/1Gq94t310ghnHQ1WwA5almok9Vmrvfrsb/view?usp=sharing" className="btn btn-outline-danger hire">get my resume</a>
                         </div>
                         <div className="col-lg-6 form">
                             <form action="https://formspree.io/f/xvojrebq" method="post">

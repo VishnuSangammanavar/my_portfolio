@@ -72,6 +72,7 @@ const skill = [
 const project = [
     {
         projectUrl: "https://vishnusangammanavar.github.io/Yummy-Resturent/",
+        githubLink: "https://github.com/VishnuSangammanavar/Yummy-Resturent",
         imgUrl: "url('./img/Resturent.png')",
         title: "Yummy",
         desc: "A website to explore the restaurant",
@@ -79,6 +80,7 @@ const project = [
     },
     {
         projectUrl: "https://vishnusangammanavar.github.io/Go-shop/",
+        githubLink: "https://github.com/VishnuSangammanavar/Go-shop",
         imgUrl: "url('./img/e-commerce.png')",
         title: "Go-Shop",
         desc: "A e-commerce website to explore the fashion",
@@ -86,6 +88,7 @@ const project = [
     },
     {
         projectUrl: "https://vishnusangammanavar.github.io/Weather-App/",
+        githubLink: "https://github.com/VishnuSangammanavar/Weather-App",
         imgUrl: "url('./img/Weather.png')",
         title: "Weather App",
         desc: "A weather app, where users can easily check the current weather conditions for any location worldwide. It provides detailed information such as temperature, humidity, wind speed, and more",
@@ -93,6 +96,7 @@ const project = [
     },
     {
         projectUrl: "https://vishnusangammanavar.github.io/TodoApp/",
+        githubLink: "https://github.com/VishnuSangammanavar/TodoApp",
         imgUrl: "url('./img/TodoApp.png')",
         title: "Todo App",
         desc: "Add your today's all task to the list and complete them according to your priority",
@@ -100,6 +104,7 @@ const project = [
     },
     {
         projectUrl: "https://vishnusangammanavar.github.io/Easy-Notes/",
+        githubLink: "https://github.com/VishnuSangammanavar/Easy-Notes",
         imgUrl: "url('./img/EasyNote.png')",
         title: "Easy Notes",
         desc: "Notes in your pocket. Easy Notes is a user-friendly note-taking web application, Add your quick note and access it any time",
@@ -107,6 +112,7 @@ const project = [
     },
     {
         projectUrl: "https://vishnusangammanavar.github.io/movie-recommendation/",
+        githubLink: "https://github.com/VishnuSangammanavar/movie-recommendation",
         imgUrl: "url('./img/Netflix.png')",
         title: "Movie Recommendation",
         desc: "A website which recommends the movies for you",
