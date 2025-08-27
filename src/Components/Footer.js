@@ -8,19 +8,7 @@ const Footer = () => {
             <div className="row">
                 <div className="col-11 m-auto">
                     <div className="row">
-                        <div className="col-lg-6 d-flex flex-column justify-content-center achievements">
-                            <div className="section-title">
-                                <h2>Achievements</h2>
-                            </div>
-                            <ol>
-                                <li>Best Student Cabinet (Placement secretary)</li>
-                                <li>Placement Secretary for the year 2022 - 2023.</li>
-                                <li>Winner of Code-e-thon event conducted by Gogte Institute of technology.</li>
-                                <li>Won 2nd position in coding event conducted by KLE Institute of Technology, Hubbali.</li>
-                                <li>Participated in Ganaka Vidya National Level Hackathon conducted by Jain College Of Engineering, Belagavi Dept of MCA.</li>
-                            </ol>
-                        </div>
-                        <div className="col-lg-6 d-flex flex-column interests">
+                        <div className="col-lg-12 d-flex flex-column interests">
                             <div className="section-title">
                                 <h2>I'm interested About</h2>
                             </div>
